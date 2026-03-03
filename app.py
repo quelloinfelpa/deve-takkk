@@ -6,9 +6,13 @@ Crea una cartella di progetto.
 - Stampi a schermo il numero totale di righe
 - Crea il file input.txt con del contenuto di esempio.
 """
-
+rt=""
 with open("input.txt", "r")as f:
     righe = f.readlines()
 
+for r in righe:
+    rt+=r
 
+rp=rt.split()
+print(rp)
 print(len(righe))
